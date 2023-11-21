@@ -13,9 +13,6 @@ const { metadata } = Astro.props;
 ---
 
 <PageLayout metadata={metadata}>
-  <Fragment slot="announcement">
-    <slot name="announcement" />
-  </Fragment>
   <Fragment slot="header">
     <slot name="header">
       <Header
@@ -24,7 +21,7 @@ const { metadata } = Astro.props;
           {
             type: 'ghost',
             text: 'Download',
-            href: 'https://github.com/onwidget/astrowind'
+            href: 'https://github.com/agency-of-learning/conference-app',
           },
         ]}
         showToggleTheme
